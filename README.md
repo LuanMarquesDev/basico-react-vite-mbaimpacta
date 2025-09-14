@@ -1,4 +1,4 @@
-# Basico React com Vite - MBA Impacta
+# Basico React com Vite - MBA Impacta ![React](https://img.shields.io/badge/React-18.2.0-blue?logo=react&logoColor=white)
 
 Este projeto é um exemplo básico de React configurado com **Vite** e **TypeScript**, sem depender de referências externas via CDN. Ele inclui componentes funcionais, uso de **Context API**, e um contador interativo com informações derivadas.
 
