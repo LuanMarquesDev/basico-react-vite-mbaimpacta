@@ -15,8 +15,8 @@ export default function InfoBox() {
   }, [counter]);
 
   return (
-    <div>
-      <p>O resto da divisão por 2 do contador é: {resto}</p>
+    <div className="info-box">
+      <p> O resto da divisão por 2 do contador é: {resto} </p>
     </div>
   );
 }

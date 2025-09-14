@@ -1,69 +1,72 @@
-# React + TypeScript + Vite
+# Basico React com Vite - MBA Impacta
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é um exemplo básico de React configurado com **Vite** e **TypeScript**, sem depender de referências externas via CDN. Ele inclui componentes funcionais, uso de **Context API**, e um contador interativo com informações derivadas.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ⚡ Tecnologias Usadas
 
-## Expanding the ESLint configuration
+- [React 18](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- TypeScript
+- CSS moderno
+- Context API para gerenciamento de estado
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Como Rodar
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+1. Clone o repositório:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/LuanMarquesDev/basico-react-vite-mbaimpacta.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Instale as dependências:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+3. Inicie o servidor de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+4. Abra no navegador o link exibido no terminal (ex: `http://localhost:5173`).
+
+---
+
+## 🖥 Funcionalidades
+
+- Exibição de um título e texto explicativo
+- Lista de itens renderizada dinamicamente
+- Botão interativo que incrementa o contador
+- Componente `InfoBox` que mostra o resto da divisão do contador por 2
+- Layout responsivo e estilizado com CSS moderno
+
+---
+
+## 💻 Scripts Disponíveis
+
+- `npm run dev` - Inicia o servidor de desenvolvimento
+- `npm run build` - Cria build de produção
+- `npm run preview` - Visualiza o build de produção localmente
+
+---
+
+## 🖌 Estilização
+
+- CSS simples e moderno, incluindo:
+
+  - Fundo claro
+  - Cards para itens de lista
+  - Botão com hover e animação
+  - Caixa de informações (`InfoBox`) destacada
+
+---
+
+## 📄 Licença
+
+MIT © Luan Marques
